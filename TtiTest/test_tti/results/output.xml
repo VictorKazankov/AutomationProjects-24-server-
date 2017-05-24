@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170323 12:43:15.459" generator="Robot 3.0 (Python 2.7.8 on win32)">
+<suite source="D:\AutomationProjects\TtiTest\test_tti\tests_tree.robot" id="s1" name="Tests Tree">
+<kw type="setup" name="Session Authorization" library="UserAuthorization">
+<msg timestamp="20170323 12:43:18.473" level="INFO">Starting new HTTP connection (1): 192.168.17.81</msg>
+<msg timestamp="20170323 12:43:18.536" level="INFO">Session created and authorization</msg>
+<status status="PASS" endtime="20170323 12:43:18.537" starttime="20170323 12:43:18.370"></status>
+</kw>
+<test id="s1-t1" name="Count elements in tree">
+<kw name="Get count all objects in tree">
+<kw name="Get Count Element" library="TreeFunc">
+<status status="PASS" endtime="20170323 12:43:19.153" starttime="20170323 12:43:18.539"></status>
+</kw>
+<status status="PASS" endtime="20170323 12:43:19.154" starttime="20170323 12:43:18.539"></status>
+</kw>
+<kw name="Verify that count objects more 0">
+<kw name="Verify Count Elements Tree" library="TreeFunc">
+<msg timestamp="20170323 12:43:19.219" level="INFO">test</msg>
+<status status="PASS" endtime="20170323 12:43:19.219" starttime="20170323 12:43:19.155"></status>
+</kw>
+<status status="PASS" endtime="20170323 12:43:19.219" starttime="20170323 12:43:19.154"></status>
+</kw>
+<status status="PASS" endtime="20170323 12:43:19.220" critical="yes" starttime="20170323 12:43:18.537"></status>
+</test>
+<test id="s1-t2" name="Return possible variants options for different TTI type">
+<kw name="Verify for GTK-10-4 objects">
+<kw name="Get Mode Gtk Object" library="TreeFunc">
+<status status="PASS" endtime="20170323 12:43:19.295" starttime="20170323 12:43:19.271"></status>
+</kw>
+<kw name="Verify Mode Number Gtk" library="TreeFunc">
+<msg timestamp="20170323 12:43:19.295" level="INFO">Mode for GTK-10-4 object is correct</msg>
+<status status="PASS" endtime="20170323 12:43:19.296" starttime="20170323 12:43:19.295"></status>
+</kw>
+<status status="PASS" endtime="20170323 12:43:19.296" starttime="20170323 12:43:19.270"></status>
+</kw>
+<kw name="Verify for PS-90 objects">
+<kw name="Get Mode Ps Object" library="TreeFunc">
+<status status="PASS" endtime="20170323 12:43:19.320" starttime="20170323 12:43:19.297"></status>
+</kw>
+<kw name="Verify Mode Number Ps" library="TreeFunc">
+<msg timestamp="20170323 12:43:19.320" level="INFO">Mode for PS-90 object is correct</msg>
+<status status="PASS" endtime="20170323 12:43:19.320" starttime="20170323 12:43:19.320"></status>
+</kw>
+<status status="PASS" endtime="20170323 12:43:19.321" starttime="20170323 12:43:19.296"></status>
+</kw>
+<kw name="Verify for DG-90 objects">
+<kw name="Get Mode Dg Object" library="TreeFunc">
+<status status="PASS" endtime="20170323 12:43:19.340" starttime="20170323 12:43:19.322"></status>
+</kw>
+<kw name="Verify Mode Number Dg" library="TreeFunc">
+<msg timestamp="20170323 12:43:19.341" level="INFO">Mode for DG-90 object is correct</msg>
+<status status="PASS" endtime="20170323 12:43:19.341" starttime="20170323 12:43:19.340"></status>
+</kw>
+<status status="PASS" endtime="20170323 12:43:19.341" starttime="20170323 12:43:19.321"></status>
+</kw>
+<kw name="Verify for other type(AVO object)">
+<kw name="Get Mode Avo Object" library="TreeFunc">
+<status status="PASS" endtime="20170323 12:43:19.360" starttime="20170323 12:43:19.342"></status>
+</kw>
+<kw name="Verify Mode Number Avo" library="TreeFunc">
+<msg timestamp="20170323 12:43:19.361" level="INFO">Mode for AVO object is empty value</msg>
+<status status="PASS" endtime="20170323 12:43:19.361" starttime="20170323 12:43:19.360"></status>
+</kw>
+<status status="PASS" endtime="20170323 12:43:19.361" starttime="20170323 12:43:19.342"></status>
+</kw>
+<status status="PASS" endtime="20170323 12:43:19.362" critical="yes" starttime="20170323 12:43:19.269"></status>
+</test>
+<kw type="teardown" name="Close Session" library="UserAuthorization">
+<status status="PASS" endtime="20170323 12:43:19.366" starttime="20170323 12:43:19.365"></status>
+</kw>
+<doc>Verify count elements and opportunity adding measurement to objects of module tree</doc>
+<status status="PASS" endtime="20170323 12:43:19.366" starttime="20170323 12:43:15.465"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Tests Tree" pass="2">Tests Tree</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20170323 12:43:18.367" level="WARN">Imported library 'D:\AutomationProjects\TtiTest\test_tti\modules\config.py' contains no keywords.</msg>
+</errors>
+</robot>
